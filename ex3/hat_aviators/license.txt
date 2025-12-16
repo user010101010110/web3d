@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hat Aviators
+* source:	https://sketchfab.com/3d-models/hat-aviators-1f2348e1ac184a2bb79b4c2f0c4ad48b
+* author:	wewwuworks (https://sketchfab.com/Ensign_Crusher)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hat Aviators" (https://sketchfab.com/3d-models/hat-aviators-1f2348e1ac184a2bb79b4c2f0c4ad48b) by wewwuworks (https://sketchfab.com/Ensign_Crusher) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
