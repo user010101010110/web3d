@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene cursor="rayOrigin: mouse">
+
+      <a-assets>
+        <img id="fondo" src="fondo.jpeg">
+        <img id="imagen1" src="tierra.jpg">
+        <img id="imagen2" src="sol.jpeg">
+        <img id="imagen3" src="marte.jpeg">
+        <img id="imagen4" src="venus.jpg">
+        <img id="imagen5" src="luna.jpg">
+        <img id="imagen6" src="saturno.jpeg">
+      </a-assets>
+
+      <a-sky src="#fondo"></a-sky>
+
+      <a-plane src="#fondo"></a-plane>
+
+      <a-sphere
+        id="obj2"
+        position="0 3 -6"
+        radius="2"
+        src="#imagen2">
+      </a-sphere>
+
+      <a-cone
+        position="0 1 -10"
+        radius-bottom="1"
+        height="2"
+        src="#imagen4">
+      </a-cone>
+
+      <a-box
+        id="obj1"
+        position="0 1 -14"
+        src="#imagen1">
+      </a-box>
+
+      <a-torus
+        position="2 1 -14"
+        radius="0.5"
+        radius-tubular="0.15"
+        src="#imagen5"
+        animation="property: rotation; to: 0 360 0; dur: 4000; loop: true">
+      </a-torus>
+
+      <a-cylinder
+        id="obj3"
+        position="0 1 -18"
+        radius="0.7"
+        height="2"
+        src="#imagen3">
+      </a-cylinder>
+
+      <a-dodecahedron
+        position="0 2 -30"
+        radius="1.5"
+        src="#imagen6"
+        animation="property: position; to: 0 2 -20; dur: 4000; dir: alternate; loop: true">
+      </a-dodecahedron>
+
+    </a-scene>
+
+    <script>
+      document.querySelector("#obj1").addEventListener("click", function () {
+        this.setAttribute("animation", {
+          property: "position",
+          to: "0 4 -14",
+          dur: 2000
+        });
+      });
+
+      document.querySelector("#obj2").addEventListener("click", function () {
+        this.setAttribute("animation", {
+          property: "scale",
+          to: "10 10 10",
+          dur: 2000
+        });
+      });
+
+      document.querySelector("#obj3").addEventListener("click", function () {
+        this.setAttribute("animation", {
+          property: "rotation",
+          to: "0 360 0",
+          dur: 3000
+        });
+      });
+    </script>
+
+  </body>
+</html>
